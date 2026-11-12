@@ -1,6 +1,6 @@
 [package]
 name = "grep"
-version = "3.12"
+version = "3.12.0"
 edition = "2024"
 authors = ["Matteo Tenca <matteo.tenca@gmail.com>"]
 description = "A fast grep clone written in Rust, with GNU grep compatible options and Perl regex (-P) support"
