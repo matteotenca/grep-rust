@@ -1,0 +1,22 @@
+[package]
+name = "grep"
+version = "3.12"
+edition = "2024"
+authors = ["Matteo Tenca <matteo.tenca@gmail.com>"]
+description = "A fast grep clone written in Rust, with GNU grep compatible options and Perl regex (-P) support"
+readme = "README.md"
+categories = ["command-line-utilities", "text-processing"]
+license-file = "LICENSE.txt"
+repository = "https://github.com/matteotenca/grep-rust"
+
+[dependencies]
+regex = "1"
+pcre2 = "0.2"
+memchr = "2"
+memmap2 = "0.9"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
